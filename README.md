@@ -195,7 +195,7 @@
 #### 128.Condition实例被绑定在一个Lock对象上，通过Lock对象的newCondition()方法获取Condition实例，Condition实例提供了如下三个方法：
 #### 129.await()类似于隐式同步监视器上的wait()方法。signal()类似于notify()。signalAll()类似notifyAll()方法。
 #### 130.BlockingQueue：可以作为线程同步工具，当生产者线程试图向BlockingQueue中放入元素时，如果该队列已满，则线程被阻塞；当消费线程试图从BlockingQueue中取出元素时，如果该队列已空，则改程序被阻塞。
-131.BlockingQueue继承了Queue接口，可以使用Queue接口中的方法，归纳如下：a.在队列尾部插入元素。包括add(E e)、offer(E e)和put(E e)方法，当该队列已满，这三个方法分别会抛出异常、返回false、素色队列；b.在队列头部删除并返回删除的元素。包括remove()、poll()和take()方法。当该队列已空时，这三个方法分别会抛出异常、返回false、阻塞队列；c.在队列头部取出但不删除元素。包括element()和peek()方法，当队列已空时，这两个方法分别抛出异常、返回false。
+#### 131.BlockingQueue继承了Queue接口，可以使用Queue接口中的方法，归纳如下：a.在队列尾部插入元素。包括add(E e)、offer(E e)和put(E e)方法，当该队列已满，这三个方法分别会抛出异常、返回false、素色队列；b.在队列头部删除并返回删除的元素。包括remove()、poll()和take()方法。当该队列已空时，这三个方法分别会抛出异常、返回false、阻塞队列；c.在队列头部取出但不删除元素。包括element()和peek()方法，当队列已空时，这两个方法分别抛出异常、返回false。
 #### 132.线程池：通过Executors工厂类来生产线程池。
 #####       a.newFixedThreadPool(int nThreads):创建一个可重用的、具有固定线程数的线程池；
 #####       b.newCachedThreadPool():创建一个具有缓存功能的线程池，系统根据需要创建线程，这些线程将会被缓存在线程池中；
