@@ -154,7 +154,7 @@
 #### 87.Deque是Queue接口的子接口，代表双端队列，ArrayDeque是Deque的实现类，也是基于数组实现的，内部数组默认长度16.
 #### 88.LinkedList是List和Deque的实现类，与ArrayDeque和ArrayList实现机制不同，它内部以链表形式保存元素，因此随机访问集合元素时性能较差，但是在插入、删除元素时性能出色。而以数组形式实现的集合随机访问元素的性能较好。
 #### 89.Collections类中提供了多个synchronizedXxx()方法，该方法可将指定集合包装成线程同步的集合，解决多线程并发访问集合的线程安全问题。
-#### 90.数组和泛型有所不同，假设Foo是Bar的一个字类型（子类或者子接口），那么Foo[]依然是Bar[]的子类型；但G<Foo>不是G<Bar>的子类型。
+#### 90.数组和泛型有所不同，假设Foo是Bar的一个字类型（子类或者子接口），那么Foo[]依然是Bar[]的子类型；但G\<Foo\>不是G\<Bar\>的子类型。
 #### 91.当把一个具有泛型信息的对象赋给另一个没有泛型信息的变量时，所有在尖括号之间的类型信息都将被扔掉。
 #### 92.查看表结构desc 表名；查看建表约束show create 表名；删除约束alter table 表名 drop index street;添加约束alter table [table_name] add constraint [constraint_name] [unique| primary key|foreign key] ([column_name])；
 #### 93.主键约束相当于非空约束和唯一约束，即主键约束的列既不允许出现重复值，也不允许出现null值；如果对多列组合建立主键约束，则多列里包含的每一列都不能为空，但只要求这些列组合不能重复。主键列的值可用于唯一的标识表中的一条记录。
