@@ -137,7 +137,7 @@
 #### 70.Treeset根据元素的实际值大小来进行排序，不是根据插入顺序。HashSet根据hash算法确定元素的存储位置，TreeSet采用红黑树的数据结构来存储集合元素。Treeset支持自然排序和定制排序。
 #### 71.自然排序：TreeSet会调用集合元素的compareTo(Object obj)方法来比较元素之间的大小关系，然后将集合元素升序排列。
 #### 72.Java提供了一个Comparable接口，该接口里定义了一个compareTo(Object obj)方法，该方法返回一个整数值，实现该接口的类必须实现该方法。例如obj1.compareTo(obj2)，如果该方法返回0则表明两个对象相等；如果该方法返回一个正整数，则表明obj1大于obj2；如果该方法返回一个负整数，则表明obj1小于obj2。
-#### 73.向TreeSet中添加元素时，只有第一个元素无需实现Comparable接口，后面的所有元素必须实现，这样试图从TreeSet中取出元素时，会引发ClassCastException，所以最好所有元素都要实现Comparable接口。
+#### 73.向TreeSet中添加元素时，只有第一个元素无需实现Comparable接口，后面的所有元素必须实现，即便如此从TreeSet中取出元素时，仍然会引发ClassCastException，所以最好所有元素都要实现Comparable接口。
 #### 74.一旦改变了TreeSet集合里可变元素的实例变量，当再企图删除该对象时，TreeSet也会删除失败(甚至集合中原有的、实例变量没有被修改但与修改后元素相等的元素也无法删除)。所以为了程序更加健壮，不要修改放入HashSet和TreeSet集合中元素的关键实例变量。
 #### 75.定制排序：再创建TreeSet时，提供一个Comparator对象与该TreeSet集合关联。
 #### 76.EnumSet是一个专为枚举类设计的集合类，所有元素必须是指定枚举类型的枚举值，集合元素也是有序的以枚举值再Enum类内的定义顺序来确定集合元素的顺序。
