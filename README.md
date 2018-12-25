@@ -148,7 +148,7 @@
 #### 81.如果开始就知道ArrayList或Vector集合需要保存多少个元素，可以在创建的时候指定initialCapacity。如果创建空的ArrayList或Vector集合，默认长度是10。
 #### 82.ArrayList和vector用法相同，Vector是一个非常古老的借口从JDK1存在，方法名大多很长不方便使用，但是是线程安全的，ArrayList使用方便但是多线程使用要注意很多问题（线程不安全）。
 #### 83.Vector的子类Stack是栈式存储结构，但是由于古老，推荐使用ArrayDeque（List和Deque的实现类）。
-#### 84.固定长度的List：Arrays.ArrayList是一个gudingchangdudeList集合，程序只能遍历访问该集合里的元素，不可增加、删除。通过Arrays工具类的asList(Object... a)获得实例。
+#### 84.固定长度的List：Arrays.ArrayList是一个固定长度的List集合，程序只能遍历访问该集合里的元素，不可增加、删除。通过Arrays工具类的asList(Object... a)获得实例。
 #### 85.Queue集合：Queue用于模拟队列这种数据结构，队列先进先出，头部保存在队列中存放时间最长的元素，尾部保存在队列中存放时间最短的元素。Queue接口有一个PriorityQueue实现类。除此之外，Queue还有一个Deque接口，Deque代表一个双端队列，双端队列可以同时从#### 两端来添加删除元素，因此Deque的实现类既可以当队列使用也可以当成栈使用。Java为Deque提供了ArrayDeque和LinkedList两个实现类。
 #### 86.PriorityQueue实现类：一个对列实现类，但是不是绝对标准的对列实现，因为它保存队列的顺序不是按照加入队列的顺序，而是按队列元素的大小进行重新排序的。
 #### 87.Deque是Queue接口的子接口，代表双端队列，ArrayDeque是Deque的实现类，也是基于数组实现的，内部数组默认长度16.
